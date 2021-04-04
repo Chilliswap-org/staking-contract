@@ -298,7 +298,7 @@ contract CHILLIFarm is Ownable {
 
     function addChilliAddress(address _chilliTokenAddr) public {
         require(msg.sender == devaddr, "dev: wut?");
-        require(address(chilli) != address(0), "already added");
+        require(address(chilli) == address(0), "already added");
         chilli = ChilliToken(_chilliTokenAddr);
 
     }

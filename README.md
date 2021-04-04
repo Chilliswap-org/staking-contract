@@ -6,7 +6,7 @@ Make sure you've [Hardhat](https://hardhat.org/) installed (Hardhat is an altern
 
 **Clone the repo**
 ```
-git clone 
+git clone git@bitbucket.org:osamabariphp/chilliswa-staking-contracts.git
 ```
 **Install Dependencies**
 ```
