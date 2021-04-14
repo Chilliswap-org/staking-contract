@@ -23,12 +23,12 @@ module.exports = {
 
   networks: {
     kovan: {
-      url: `https://kovan.infura.io/v3/39855ff2f7ee4fae951d6c197df71722`,
+      url: `https://kovan.infura.io/v3/${process.env.INFURA}`,
       accounts: [process.env.DEPLOYER_PRIVATE_KEY],
       gas: 10000000,
     },
     mainnet: {
-      url: `https://mainnet.infura.io/v3/39855ff2f7ee4fae951d6c197df71722`,
+      url: `https://mainnet.infura.io/v3/${process.env.INFURA}`,
       accounts: [process.env.DEPLOYER_PRIVATE_KEY],
       gas: 10000000,
     }
@@ -37,7 +37,7 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "7CE1MEKJN68R2K8PQV3816Q6TVQ1MZDJK2"
+    apiKey: process.env.DEPLOYER_PRIVATE_KEY
   }
 };
 
