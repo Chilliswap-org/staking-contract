@@ -23,21 +23,21 @@ module.exports = {
 
   networks: {
     kovan: {
-      url: `https://kovan.infura.io/v3/5cc419256e87411ead1b901cd49da146`,
+      url: `https://kovan.infura.io/v3/39855ff2f7ee4fae951d6c197df71722`,
       accounts: [process.env.DEPLOYER_PRIVATE_KEY],
-      gasPrice: 50000000000
+      gas: 10000000,
     },
     mainnet: {
-      url: `https://mainnet.infura.io/v3/ea4c45afc1204d6db90b589bb50a5d10`,
+      url: `https://mainnet.infura.io/v3/39855ff2f7ee4fae951d6c197df71722`,
       accounts: [process.env.DEPLOYER_PRIVATE_KEY],
-      gasPrice: 100000000000
+      gas: 10000000,
     }
   },
 
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "3UKISCC9T58CP9D7SEDSHJ19JPG3JIIGZS"
+    apiKey: "7CE1MEKJN68R2K8PQV3816Q6TVQ1MZDJK2"
   }
 };
 

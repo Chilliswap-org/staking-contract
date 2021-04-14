@@ -22,9 +22,9 @@ async function main() {
   // ChilliFarm Params
   const devAddr = "0x79bD6ED26F7bB3a3443DAAA635C40bAA8559f0b5";
   const chilliPerBlock = "4946100190240000000";
-  const startBlock = "23917750";
+  const startBlock = "12212159"; //23917750
   const bonusEndBlock = startBlock; // this will never change
-  const lockPeriod = "31536000"; // 1 year
+  const lockPeriod = "2592000"; // 1 month
 
   // deploy test LP
   // const testLPToken = await TestERC20.deploy("TestPoolToken", "TPT", devAddr)
@@ -40,7 +40,6 @@ async function main() {
     developement,
     team,
     uniswap,
-    pancake,
     chilliFarm.address,
     airdrops,
     bounties
